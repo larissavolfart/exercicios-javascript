@@ -151,3 +151,24 @@ for (const chave in original) {
 }
 
 console.log(copia)
+
+//Exercício 16 (funções - retorno de função): Escreva uma função calcularAreaRetangulo que recebe a altura
+// e a largura de um retângulo e retorne a área. 
+function calcularAreaRetangulo(altura ,largura){
+    const area = altura * largura
+    return area
+}
+
+console.log(calcularAreaRetangulo(5, 10))
+
+
+//Exercício 17 (funções - arrow function): Crie uma arrow function chamada calcularPrecoComDesconto que recebe:
+// precoOriginal: preço inicial de um produto.
+// desconto: porcentagem de desconto.
+// A função deve retornar o preço final após aplicar o desconto, arredondado para duas casas decimais.
+const calcularPrecoComDesconto = (precoOriginal, desconto) => {
+    const precoFinal = precoOriginal - (precoOriginal * (desconto / 100))
+    return precoFinal.toFixed(2)
+}
+    console.log(calcularPrecoComDesconto (100, 20)) 
+    console.log(calcularPrecoComDesconto(250, 15))
